@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;">
+    <g id="productMPI" transform="matrix(0.816334,0,0,0.863562,-830.963,-230.159)">
+        <rect x="1017.92" y="266.523" width="612.495" height="578.998" style="fill:none;"/>
+        <g id="home" transform="matrix(0.849378,0,0,0.802925,984.417,227.758)">
+            <path d="M66.667,733.333L733.333,733.333" style="fill:none;fill-rule:nonzero;stroke:rgb(0,158,112);stroke-width:50px;"/>
+            <path d="M98.332,733.333L99.998,332.333C99.998,312 109.665,292.668 125.665,280.001L359,98.334C383,79.668 416.663,79.668 440.997,98.334L674.333,279.668C690.667,292.334 700,311.666 700,332.333L700,733.333" style="fill:none;fill-rule:nonzero;stroke:rgb(0,158,112);stroke-width:50px;stroke-linecap:butt;"/>
+            <path d="M433.333,566.667L366.667,566.667C339,566.667 316.667,589 316.667,616.667L316.667,733.333L483.333,733.333L483.333,616.667C483.333,589 461,566.667 433.333,566.667Z" style="fill:none;fill-rule:nonzero;stroke:rgb(0,158,112);stroke-width:50px;stroke-linecap:butt;"/>
+            <path d="M316.667,458.333L250,458.333C231.667,458.333 216.667,443.333 216.667,425L216.667,375C216.667,356.667 231.667,341.667 250,341.667L316.667,341.667C335,341.667 350,356.667 350,375L350,425C350,443.333 335,458.333 316.667,458.333Z" style="fill:none;fill-rule:nonzero;stroke:rgb(0,158,112);stroke-width:50px;stroke-linecap:butt;"/>
+            <path d="M550,458.333L483.333,458.333C465,458.333 450,443.333 450,425L450,375C450,356.667 465,341.667 483.333,341.667L550,341.667C568.333,341.667 583.333,356.667 583.333,375L583.333,425C583.333,443.333 568.333,458.333 550,458.333Z" style="fill:none;fill-rule:nonzero;stroke:rgb(0,158,112);stroke-width:50px;stroke-linecap:butt;"/>
+            <path d="M633.337,233.333L632.337,133.333L485.67,133.333" style="fill:none;fill-rule:nonzero;stroke:rgb(0,158,112);stroke-width:50px;"/>
+        </g>
+    </g>
+</svg>

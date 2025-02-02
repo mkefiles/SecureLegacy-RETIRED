@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 500 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g id="Underline" transform="matrix(1,0,0,0.3,0,0)">
+        <rect x="0" y="0" width="500" height="100" style="fill:none;"/>
+        <clipPath id="_clip1">
+            <rect x="0" y="0" width="500" height="100"/>
+        </clipPath>
+        <g clip-path="url(#_clip1)">
+            <g transform="matrix(1,0,0,3.33333,2.00887,-106.153)">
+                <path d="M8.9,56.775C240.814,29.648 477.44,29.8 487.083,57.157" style="fill:none;stroke:rgb(0,211,255);stroke-width:8.33px;"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,499 @@
+/* Imports
+========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Site-Wide Variables and Settings
+========================================================================== */
+:root{
+    font-size: 16px;
+
+    --color-one: rgb(254, 254, 254);
+    --color-two: rgb(0, 213, 255);
+    --color-three: rgb(0, 158, 112);
+    --color-four: rgb(247, 247, 247);
+    --color-five: rgb(125, 133, 141);
+    --color-six: rgb(107, 114, 121);
+
+    /* Utopia: Min. VP: 320; 16; 1.067 - Max. VP: 1536; 20; 1.2 */
+    --step--2: clamp(0.8681rem, 0.8808rem + -0.0132vw, 0.8781rem);
+    --step--1: clamp(0.9375rem, 0.91rem + 0.1373vw, 1.0419rem);
+    --step-0: clamp(1rem, 0.9342rem + 0.3289vw, 1.25rem);
+    --step-1: clamp(1.0669rem, 0.9529rem + 0.5699vw, 1.5rem);
+    --step-2: clamp(1.1388rem, 0.9647rem + 0.8701vw, 1.8rem);
+    --step-3: clamp(1.215rem, 0.9663rem + 1.2434vw, 2.16rem);
+    --step-4: clamp(1.2963rem, 0.9553rem + 1.7048vw, 2.5919rem);
+    --step-5: clamp(1.3831rem, 0.9285rem + 2.273vw, 3.1106rem);
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0 auto;
+    background-color: var(--color-one);
+}
+small{
+    font-size: var(--step--2);
+}
+p{
+    font-size: var(--step--1);
+    line-height: 1.35;
+    text-align: center;
+}
+h6{
+    font-size: var(--step-0);
+    text-align: center;
+}
+h5{
+    font-size: var(--step-1);
+    text-align: center;
+}
+h4{
+    font-size: var(--step-2);
+    text-align: center;
+}
+h3{
+    font-size: var(--step-3);
+    text-align: center;
+}
+h2{
+    font-size: var(--step-4);
+    text-align: center;
+}
+h1{
+    font-size: var(--step-5);
+    text-align: center;
+    color: var(--color-one);
+}
+
+/* Desktop Styling (Desktop First)
+========================================================================== */
+/* ALL OBJECTS */
+.content{
+    padding: 15px 175px 15px 175px;
+    display: flex;
+    flex-direction: column;
+}
+.content > h2, .content > h3, .content > h5{
+    color: var(--color-five);
+}
+.btn{
+    width: 150px;
+    border-radius: 25px;
+    background-color: var(--color-three);
+    padding: 10px 5px 10px 5px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--color-one);
+}
+noscript{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    background-color: #de5246;
+    color: var(--color-one);
+    font-weight: bold;
+}
+
+/* NAVIGATION MENU */
+.navigation{
+    background-color: var(--color-one);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 15px 20px 15px;
+}
+.header__icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#secure-legacy{
+    height: 50px;
+}
+#hamburger{
+    display: none;
+    height: 30px;
+}
+.header__links{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    column-gap: 20px;
+}
+.header__links > li{
+    list-style-type: none;
+}
+.header__links > li > a{
+    text-decoration: none;
+    color: black;
+}
+.link:hover{
+    color: var(--color-two);
+}
+
+/* PRODUCTS */
+.jumbotron{
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.jumbotron__products{
+    background: linear-gradient(to top, rgba(0,0,0,.5), rgba(0,0,0,.5)), url(imgs/family_activity.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.underline{
+    background-image: url("imgs/underline.svg");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+.content__products{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.card{
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 400px;
+}
+.card__image{
+    text-align: center;
+}
+.card__image > img {
+    height: 100px;
+}
+.card__description{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* CONTACT */
+.jumbotron__contact{
+    background: linear-gradient(to top, rgba(0,0,0,.5), rgba(0,0,0,.5)), url(imgs/contact_us.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.contact_form{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.contact_form__input{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 500px;
+}
+.contact_form__input > input{
+    padding: 10px;
+}
+.contact_form__input > textarea{
+    resize: none;
+    padding: 10px;
+}
+.contact_form > button {
+    border: none;
+}
+.formBtn{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+#error_name, #error_email, #error_phone, #error_message{
+    display: none;
+    font-size: var(--step--2);
+    color: red;
+}
+.invalid{
+    border-color: red;
+}
+.btn--disabled{
+    background-color: var(--color-five) !important;
+}
+.valid{
+    border-color: var(--color-three);
+}
+
+/* THANK YOU */
+.jumbotron__thanks{
+    background: linear-gradient(to top, rgba(0,0,0,.5), rgba(0,0,0,.5)), url(imgs/meet_you.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+/* QUOTER */
+.jumbotron__quoter{
+    background: linear-gradient(to top, rgba(0,0,0,.5), rgba(0,0,0,.5)), url(imgs/get_your_quote.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+}
+
+/* ABOUT */
+.jumbotron__about{
+    background: linear-gradient(to top, rgba(0,0,0,.5), rgba(0,0,0,.5)), url(imgs/maine.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+}
+.family{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.family > img{
+    border-radius: 30px;
+    width: 60%;
+}
+
+
+/* LICENSING */
+.licensing{
+    background-color: var(--color-four);
+}
+
+/* CARRIERS */
+.carriers__gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 10vw);
+    gap: 15px;
+}
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* CALL TO ACTION */
+.cta{
+    background-color: var(--color-four);
+}
+.cta__btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+
+}
+
+/* FOOTER */
+footer{
+    height: 225px;
+    background-color: var(--color-five);
+    color: var(--color-one);
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#logo{
+    width: 75px;
+}
+.social__links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    column-gap: 20px;
+}
+.social__links > li{
+    list-style-type: none;
+}
+#facebook{
+    background-image: url("imgs/icon--facebook.svg");
+    display: block;
+    height: 30px;
+    width: 30px;
+}
+#tiktok{
+    background-image: url("imgs/icon--tiktok.svg");
+    display: block;
+    height: 30px;
+    width: 30px;
+}
+#email{
+    background-image: url("imgs/icon--email.svg");
+    display: block;
+    height: 30px;
+    width: 30px;
+}
+
+
+/* Small Desktop Styling
+========================================================================== */
+@media (max-width: 1280px) {
+    /* ALL OBJECTS */
+    .content{
+        padding: 15px 100px 15px 100px;
+    }
+}
+
+/* Tablet Styling (Landscape)
+========================================================================== */
+@media (max-width: 1024px) {
+    /* ALL OBJECTS */
+    .content{
+        padding: 15px 75px 15px 75px;
+    }
+
+    /* NAVIGATION MENU */
+    .navigation{
+        flex-direction: column;
+        padding-bottom: 0px;
+    }
+    .header__icons{
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #hamburger{
+        display: block;
+    }
+    .header__links{
+        flex-direction: column;
+        column-gap: 0px;
+    }
+    .link{
+        display: block;
+        width: 100vw;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .link:hover{
+        color: var(--color-two);
+    }
+
+    /* PRODUCTS */
+    .card{
+        flex-basis: 275px;
+    }
+    .card__image > img {
+        height: 100px;
+    }
+    .card__description{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* ABOUT */
+    .family > img{
+        width: 80%;
+    }
+
+    /* CARRIERS */
+    .carriers__gallery{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 10vw);
+    }
+
+    /* MISC. */
+    .hidden{
+        display: none;
+    }
+}
+
+/* Tablet Styling (Portrait) and Mobile Styling (Landscape)
+========================================================================== */
+@media (max-width: 768px) {
+    /* ALL OBJECTS */
+    .content{
+        padding: 15px 50px 15px 50px;
+    }
+
+    /* PRODUCTS */
+    .content__products{
+        flex-direction: column;
+    }
+    .card__description{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* ABOUT */
+    .family > img{
+        width: 90%;
+    }
+}
+
+/* Mobile Styling (Portrait)
+========================================================================== */
+@media (max-width: 640px) {
+    /* ALL OBJECTS */
+    .content{
+        padding: 15px 25px 15px 25px;
+    }
+
+    /* NAVIGATION MENU */
+    .jumbotron{
+        height: 300px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    /* CONTACT */
+    .contact_form__input{
+        width: 380px;
+    }
+
+    /* CARRIERS */
+    .carriers__gallery{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 25vw);
+    }
+}
+
+/* Mini-Mobile Styling (Portrait)
+========================================================================== */
+@media (max-width: 320px) {
+    /* ALL OBJECTS */
+    .content{
+        padding: 15px 15px 15px 15px;
+    }
+
+    /* NAVIGATION MENU */
+    #secure-legacy{
+        height: 30px;
+    }
+    #hamburger{
+        height: 20px;
+    }
+    .jumbotron{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* CONTACT */
+    .contact_form__input{
+        width: 230px;
+    }
+
+    /* CARRIERS */
+    .carriers__gallery{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 45vw);
+    }
+}
